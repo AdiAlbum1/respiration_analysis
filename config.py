@@ -5,13 +5,13 @@ PRESSURE_INCREASE_THRESHOLD = 2
 
 # System parameters
 SAMPLE_RATE = 50
-WINDOW_SIZE = 31
+WINDOW_SIZE = 17
 
 # Data generation parameters
 AMPLITUDE = 10
 FREQ = 0.3
 T = 20
-NOISE_SIGMA = 0.5
+NOISE_SIGMA = 0.2
 
 # Sleep time, for user experience
 # for deployment: 0
