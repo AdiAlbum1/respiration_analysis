@@ -15,4 +15,4 @@ NOISE_SIGMA = 0.05
 
 # Sleep time, for user experience
 # for deployment: 0
-SLEEP_TIME = 0.02
+SLEEP_TIME = 0.001
