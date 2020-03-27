@@ -9,3 +9,6 @@ We base on the following state machine, transitioning by anaylsis of the slope o
 
 Our result:
 ![result](images/result.png)
+
+Results with noise:
+![noisy_result](images/result_with_noise.png)

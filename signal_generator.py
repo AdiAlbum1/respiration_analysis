@@ -17,7 +17,7 @@ def truncate_signal(signal):
 
 def generate_signal(sample_rate, amplitude, freq, t, sigma):
 	my_signal = create_sin_signal(sample_rate, amplitude, freq, t)
-	my_signal = add_noise_to_signal(my_signal, sigma)
 	my_signal = truncate_signal(my_signal)
+	my_signal = add_noise_to_signal(my_signal, sigma)
 
 	return my_signal
