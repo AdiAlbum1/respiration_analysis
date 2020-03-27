@@ -19,8 +19,6 @@ def truncate_signal(signal):
 	truncate_signal = [max(sample, 0) for sample in signal]
 	return truncate_signal
 
-from sklearn import linear_model
-
 def determine_derivative_sign(signal, window_size, sample_rate, epsilon=10**-8):
 	half_window_size = int((window_size-1)/2)
 	linear_regression_result = np.zeros(len(signal))
