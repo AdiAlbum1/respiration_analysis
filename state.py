@@ -2,7 +2,7 @@ class State(object):
     def __init__(self):
         pass
 
-    def on_event(self, slope, sample_index, sample_rate):
+    def on_event(self, slope, event_time):
         """
         Handle events that are delegated to this State.
         """

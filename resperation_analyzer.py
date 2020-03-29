@@ -33,4 +33,6 @@ class ResperationAnalyzer(object):
             X = [i/self.sample_rate for i in range(-half_window_size,half_window_size+1)]
             slope = linregress(X, self.window).slope
 
-            self.state = self.state.on_event(slope, sample_index, self.sample_rate)
+            event_time = (sample_index - (WINDOW_SIZE-1)/2) / self.sample_rate
+
+            self.state = self.state.on_event(slope, event_time)
